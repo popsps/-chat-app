@@ -124,4 +124,3 @@ dist
 # vendor/
 /.idea
 /frontend/build
-/frontend/public
