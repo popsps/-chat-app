@@ -123,4 +123,4 @@ dist
 # Dependency directories (remove the comment below to include it)
 # vendor/
 /.idea
-/frontend/build
+/frontend/node_modules
