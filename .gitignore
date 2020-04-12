@@ -1,5 +1,5 @@
+
 # Created by .ignore support plugin (hsz.mobi)
-/.idea
 ### Node template
 # Logs
 logs
@@ -122,4 +122,6 @@ dist
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
-
+/.idea
+/frontend/build
+/frontend/public
