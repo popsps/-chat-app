@@ -2,16 +2,23 @@ package main
 
 import (
 	"fmt"
+	"github.com/gorilla/websocket"
 	"log"
 	"net/http"
-
-	"github.com/gorilla/websocket"
+	"os"
 )
 
 func main() {
 	fmt.Println("Chat App v0.01")
 	setupRoutes()
-	_ = http.ListenAndServe(":8085", nil)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = ":8085"
+	} else{
+		port = ":" + port
+	}
+	fmt.Printf("Listening on port %s\n", port)
+	_ = http.ListenAndServe(port, nil)
 
 }
 
