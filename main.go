@@ -14,7 +14,7 @@ func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = ":8085"
-	} else{
+	} else {
 		port = ":" + port
 	}
 	fmt.Printf("Listening on port %s\n", port)
