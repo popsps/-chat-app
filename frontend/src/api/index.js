@@ -4,7 +4,7 @@ const socket = new WebSocket(`wss://chat-app0773.herokuapp.com/:${port}/ws`);
 // const socket = new WebSocket(`ws://localhost:${port}/ws`);
 //wss https
 //ws http
-console.log("location host: ", location.host)
+console.log("location host: ", window.location.hostname)
 let connect = callBack => {
   console.log("Connecting...");
 
