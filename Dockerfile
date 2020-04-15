@@ -12,4 +12,10 @@ RUN npm install
 RUN npm run build
 
 # Final stage build, production container
-FROM a
+FROM alpine:latest
+RUN apk --no-cache add ca-certificates
+COPY --from=builder /main ./
+COPY --from=node_builder /build ./web
+RUN chmod +x ./main
+EXPOSE 8085
+CMD ./main
