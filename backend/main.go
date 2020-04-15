@@ -29,8 +29,7 @@ func setupRoutes() {
 	//	_, _ = fmt.Fprintf(w, "simple server v 0.01")
 	//})
 
-	http.Handle("/", http.FileServer(http.Dir("./build")))
-
+	http.Handle("/", http.FileServer(http.Dir("./frontend/build")))
 	//fs := http.FileServer(http.Dir("../frontend/build"))
 	//http.Handle("/", http.StripPrefix("/", fs))
 
