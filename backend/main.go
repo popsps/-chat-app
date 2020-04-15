@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 )
 
 // go backend
@@ -13,6 +14,9 @@ import (
 func main() {
 	fmt.Println("Chat App v0.01")
 	setupRoutes()
+	fmt.Println(os.Getwd())
+	fmt.Println(filepath.Glob("*"))
+	fmt.Println(filepath.Glob("../*"))
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = ":8085"

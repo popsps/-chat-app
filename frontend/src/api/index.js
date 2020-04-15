@@ -1,5 +1,7 @@
 const port = process.env.PORT || 8085
+console.log("client port : ", port)
 const socket = new WebSocket(`ws://localhost:${port}/ws`);
+// const socket = new WebSocket(`ws://localhost:${port}/ws`);
 
 let connect = callBack => {
   console.log("Connecting...");
