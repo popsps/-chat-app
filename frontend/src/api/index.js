@@ -1,6 +1,6 @@
 const port = process.env.PORT || 8085
 console.log("client port : ", port)
-const socket = new WebSocket(`ws://https://chat-app0773.herokuapp.com/:${port}/ws`);
+const socket = new WebSocket(`ws:https://chat-app0773.herokuapp.com/:${port}/ws`);
 // const socket = new WebSocket(`ws://localhost:${port}/ws`);
 
 let connect = callBack => {
