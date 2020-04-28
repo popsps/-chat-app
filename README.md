@@ -6,7 +6,7 @@ The app uses web-socket to communicate between the frontend the backend.
 
 To run this app on your local machine, you need `Node`, `Golang`, and `Docker` installed on your machine. 
 
-## Available Scripts
+## Build
 
 In the project directory, you can run:
 
